@@ -6,6 +6,57 @@
     --dark: #091E3E;
 }
 
+.orcamento {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.178);
+    padding: 20px;
+    width: 430px;
+    border-radius: 10px;
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.205);
+    z-index: 1000;
+    text-align: center;
+}
+
+.orcamento a {
+    border-radius: 20px;
+}
+
+.orcamento a:hover {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.close-btn {
+    position: absolute;
+    font-size: 30px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+}
+
+.btn {
+    margin: 10px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    border-radius: 5px;
+    z-index: 9999999;
+}
+
 #nav-externo {
     padding: 15px;
 }
@@ -51,7 +102,7 @@
 .spinner {
     width: 40px;
     height: 40px;
-    background: var(--primary); /* Cor do spinner (defina sua variável --primary) */
+    background-color: #00923F;
     margin: 0 auto;
     -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
     animation: sk-rotateplane 1.2s infinite ease-in-out;
