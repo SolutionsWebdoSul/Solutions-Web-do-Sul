@@ -6,6 +6,7 @@
     --dark: #091E3E;
 }
 
+
 .orcamento {
     display: none;
     position: fixed;
@@ -445,6 +446,12 @@ h5 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+#blocos-item {
+    width: 90%;
+}
 }
 
 #blocos-item:hover {
