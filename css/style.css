@@ -6,7 +6,6 @@
     --dark: #091E3E;
 }
 
-
 .orcamento {
     display: none;
     position: fixed;
@@ -263,8 +262,8 @@ h5 {
 }
 
 .navbar-dark .navbar-toggler {
-    color: var(--primary) !important;
-    border-color: var(--primary) !important;
+    color: #00923F;
+    /* border-color: #DA251D !important; */
 }
 
 @media (max-width: 991.98px) {
@@ -493,7 +492,6 @@ h5 {
         flex-basis: calc(100% - 40px); /
     }
 }
-
 
 .service-item .service-icon {
     margin-bottom: 30px;
