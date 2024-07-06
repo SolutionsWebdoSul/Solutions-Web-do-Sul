@@ -36,6 +36,9 @@
 <!-- Custom CSS -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/style.css" rel="stylesheet">
+<style>
+.button-container{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.category-button{padding:10px 20px;margin:5px;cursor:pointer;background-color:#f5f5f5;border:1px solid #ddd;border-radius:5px;transition:.3s;color:#000}.category-button:hover{background-color:#da251d}
+</style>
 </head>
 <body>
 <div id=spinner class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -475,13 +478,14 @@ copiado: <span id=phone-number-copied></span>
 <button class="category-button" data-category="all">Todos</button><button class="category-button" data-category="restaurant">Restaurante</button>
 <button class="category-button" data-category="barber">Barbearia</button>
 <button class="category-button" data-category="logistic">logística</button>
+<button class="category-button" data-category="dentist">Dentista</button>
 </div>
 <div class="view-toggle">
 <button id="desktop-view" class="active">Versão Desktop</button>
 <button id="mobile-view">Versão Mobile</button>
 </div>
 <div class="model-container">
-<div class="model-item wow fadeInUp" data-wow-delay="1s" data-category="restaurant">
+<div class="model-item wow fadeInUp" data-wow-delay="0.3s" data-category="restaurant">
 <div class="desktop-view">
 <img src="Modelos/Capa/REST.PNG" width="500" height="300" alt="Modelo de Restaurante 1">
 <p>Modelo de Restaurante</p>
@@ -492,7 +496,7 @@ copiado: <span id=phone-number-copied></span>
 <source src="Vídeos/restaurante.mp4" type="video/mp4">
 </video>
 </div>
-<div class="model-item wow fadeInUp" data-wow-delay="1s" data-category="barber">
+<div class="model-item wow fadeInUp" data-wow-delay="0.3s" data-category="barber">
 <div class="desktop-view">
 <img src="Modelos/Capa/BRB.PNG" width="500" height="300" alt="Modelo de Barbearia 1">
 <p>Modelo de Barbearia</p>
@@ -503,7 +507,7 @@ copiado: <span id=phone-number-copied></span>
 <source src="Vídeos/barbearia.mp4" type="video/mp4">
 </video>
 </div>
-<div class="model-item wow fadeInUp" data-wow-delay="1s" data-category="logistic">
+<div class="model-item wow fadeInUp" data-wow-delay="0.3s" data-category="logistic">
 <div class="desktop-view">
 <img src="Modelos/Capa/LE.PNG" width="500" height="300" alt="Modelo de Barbearia 1">
 <p>Modelo de logística</p>
@@ -514,7 +518,7 @@ copiado: <span id=phone-number-copied></span>
 <source src="Vídeos/logistic.mp4" type="video/mp4">
 </video>
 </div>
-<div class="model-item wow fadeInUp" data-wow-delay="1s" data-category="logistic">
+<div class="model-item wow fadeInUp" data-wow-delay="0.3s" data-category="dentist">
 <div class="desktop-view">
 <img src="Modelos/Capa/DENT.PNG" width="500" height="300" alt="Modelo de Barbearia 1">
 <p>Modelo de Dentista</p>
