@@ -6,23 +6,36 @@
 <meta content="width=device-width,initial-scale=1" name=viewport>
 <meta content="Free HTML Templates" name=keywords>
 <meta content="Free HTML Templates" name=description>
-<link rel=icon href=./imagens/LOGO2.png>
-<link rel=preconnect href=https://fonts.googleapis.com>
-<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel=stylesheet>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel=stylesheet>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel=stylesheet>
-<link href=https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css rel=stylesheet>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css>
-<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css>
-<link href=lib/owlcarousel/assets/owl.carousel.min.css rel=stylesheet>
-<link href=lib/animate/animate.min.css rel=stylesheet>
-<link href=https://unpkg.com/css.gg@2.0.0/icons/css/list.css rel=stylesheet>
-<link href=css/bootstrap.min.css rel=stylesheet>
-<link href=css/style.css rel=stylesheet>
+<!-- Favicon -->
+<link rel="icon" href="./imagens/LOGO2.png">
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Wittgenstein:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster/dist/MarkerCluster.Default.css">
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<!-- Icon Libraries -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css">
+<link href="https://unpkg.com/css.gg@2.0.0/icons/css/list.css" rel="stylesheet">
+<!-- Animation Libraries -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<!-- Carousel Libraries -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<!-- Custom CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 <div id=spinner class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -204,7 +217,7 @@
 </div>
 <div class=ps-4>
 <h5 class="text-white mb-0">Páginas construidas</h5>
-<h1 class="text-white mb-0" data-toggle=counter-up>87</h1>
+<h1 class="text-white mb-0" data-toggle=counter-up>185</h1>
 </div>
 </div>
 </div>
@@ -213,6 +226,13 @@
 </div>
 </header>
 <main>
+<section class="map-section">
+<div class="container">
+<h5 class="fw-bold text-green text-uppercase" style="text-align: center;">Camaquã-RS</h5>
+<h1 class="title mb-4 wow fadeInUp">Saímos de uma cidade pequena do RS para grandes partes pelo nosso Brasil</h1>
+<div id="map" class="map-container wow zoomIn"></div>
+</div>
+</section>
 <section id=sobre>
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
 <div class="container py-5">
@@ -236,7 +256,7 @@
 <i class="bi bi-x-square close-btn"></i>
 <a target=_blank href="https://www.facebook.com/profile.php?id=61559789754181" class="btn fundo-yellow py-3 px-5 mt-3">Messenger</a>
 <a target=_blank href=https://wa.link/uozhdu class="btn fundo-yellow py-3 px-5 mt-3">WhatsApp</a>
-<a href="solutionswebdosul@gmail.com?subject=Assunto do Email&body=Corpo do Email" class="btn fundo-yellow py-3 px-5 mt-3">solutionswebdosul@gmail.com</a>
+<a href="mailto:solutionswebdosul@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">solutionswebdosul@gmail.com</a>
 </div>
 </div>
 </div>
@@ -449,66 +469,64 @@ copiado: <span id=phone-number-copied></span>
 </div>
 </section>
 <section>
-    <div class="container" id="id-container">
-        <h1 class="mb-0 wow fadeInUp" data-wow-delay="0.1s" style="color: black; text-align: center;">Modelos de Sites</h2>
-        <div class="button-container wow fadeInUp" data-wow-delay="0.1s">
-            <button class="category-button" data-category="all">Todos</button>
-            <button class="category-button" data-category="restaurant">Restaurante</button>
-            <button class="category-button" data-category="barber">Barbearia</button>
-            <button class="category-button" data-category="logistic">logística</button>
-            <!-- Adicione mais categorias conforme necessário -->
-        </div>
-        <div class="view-toggle">
-            <button id="desktop-view" class="active">Versão Desktop</button>
-            <button id="mobile-view">Versão Mobile</button>
-        </div>
-        <div class="model-container">
-            <div class="model-item wow fadeInUp" data-wow-delay="1s" data-category="restaurant">
-                <div class="desktop-view">
-                    <img src="Modelos/Capa/REST.PNG" width="500" height="300" alt="Modelo de Restaurante 1">
-                    <p>Modelo de Restaurante</p>
-                    <a href="Modelos/Restaurantly/index.html" class="view-full-site" >Ver Site Completo</a>
-                </div>
-                <iframe class="model-iframe" src="Modelos/Restaurantly/index.html" frameborder="0"></iframe>
-                <video id="video-model" class="model-video" controls>
-                    <source src="Vídeos/restaurante.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="model-item wow fadeInUp" data-wow-delay="1s" data-category="barber">
-                <div class="desktop-view">
-                    <img src="Modelos/Capa/BRB.PNG" width="500" height="300" alt="Modelo de Barbearia 1">
-                    <p>Modelo de Barbearia</p>
-                    <a href="Modelos/Barbearia/index.html" class="view-full-site">Ver Site Completo</a>
-                </div>
-                <iframe class="model-iframe" src="Modelos/Barbearia/index.html" frameborder="0"></iframe>
-                <video id="video-model" class="model-video" controls>
-                    <source src="Vídeos/barbearia.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="model-item wow fadeInUp" data-wow-delay="1s" data-category="logistic">
-                <div class="desktop-view">
-                    <img src="Modelos/Capa/LE.PNG" width="500" height="300" alt="Modelo de Barbearia 1">
-                    <p>Modelo de logística</p>
-                    <a href="Modelos/Logistic Express/index.html" class="view-full-site" >Ver Site Completo</a>
-                </div>
-                <iframe class="model-iframe" src="Modelos/Logistic Express/index.html" frameborder="0"></iframe>
-                <video id="video-model" class="model-video" controls>
-                    <source src="Vídeos/logistic.mp4" type="video/mp4">
-                </video>
-            </div>
-            <div class="model-item wow fadeInUp" data-wow-delay="1s" data-category="logistic">
-                <div class="desktop-view">
-                    <img src="Modelos/Capa/DENT.PNG" width="500" height="300" alt="Modelo de Barbearia 1">
-                    <p>Modelo de Dentista</p>
-                    <a href="Modelos/Dentcare/index.html" class="view-full-site" >Ver Site Completo</a>
-                </div>
-                <iframe class="model-iframe" src="Modelos/Dentcare/index.html" frameborder="0"></iframe>
-                <video id="video-model" class="model-video" controls>
-                    <source src="Vídeos/dentista.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    </div>
+<div class="container" id="id-container">
+<h1 class="mb-0 wow fadeInUp" data-wow-delay="0.1s" style="color: black; text-align: center;">Modelos de Sites</h2>
+<div class="button-container wow fadeInUp" data-wow-delay="0.1s">
+<button class="category-button" data-category="all">Todos</button><button class="category-button" data-category="restaurant">Restaurante</button>
+<button class="category-button" data-category="barber">Barbearia</button>
+<button class="category-button" data-category="logistic">logística</button>
+</div>
+<div class="view-toggle">
+<button id="desktop-view" class="active">Versão Desktop</button>
+<button id="mobile-view">Versão Mobile</button>
+</div>
+<div class="model-container">
+<div class="model-item wow fadeInUp" data-wow-delay="1s" data-category="restaurant">
+<div class="desktop-view">
+<img src="Modelos/Capa/REST.PNG" width="500" height="300" alt="Modelo de Restaurante 1">
+<p>Modelo de Restaurante</p>
+<a href="Modelos/Restaurantly/index.html" class="view-full-site" >Ver Site Completo</a>
+</div>
+<iframe class="model-iframe" src="Modelos/Restaurantly/index.html" frameborder="0"></iframe>
+<video id="video-model" class="model-video" controls>
+<source src="Vídeos/restaurante.mp4" type="video/mp4">
+</video>
+</div>
+<div class="model-item wow fadeInUp" data-wow-delay="1s" data-category="barber">
+<div class="desktop-view">
+<img src="Modelos/Capa/BRB.PNG" width="500" height="300" alt="Modelo de Barbearia 1">
+<p>Modelo de Barbearia</p>
+<a href="Modelos/Barbearia/index.html" class="view-full-site">Ver Site Completo</a>
+</div>
+<iframe class="model-iframe" src="Modelos/Barbearia/index.html" frameborder="0"></iframe>
+<video id="video-model" class="model-video" controls>
+<source src="Vídeos/barbearia.mp4" type="video/mp4">
+</video>
+</div>
+<div class="model-item wow fadeInUp" data-wow-delay="1s" data-category="logistic">
+<div class="desktop-view">
+<img src="Modelos/Capa/LE.PNG" width="500" height="300" alt="Modelo de Barbearia 1">
+<p>Modelo de logística</p>
+<a href="Modelos/Logistic Express/index.html" class="view-full-site" >Ver Site Completo</a>
+</div>
+<iframe class="model-iframe" src="Modelos/Logistic Express/index.html" frameborder="0"></iframe>
+<video id="video-model" class="model-video" controls>
+<source src="Vídeos/logistic.mp4" type="video/mp4">
+</video>
+</div>
+<div class="model-item wow fadeInUp" data-wow-delay="1s" data-category="logistic">
+<div class="desktop-view">
+<img src="Modelos/Capa/DENT.PNG" width="500" height="300" alt="Modelo de Barbearia 1">
+<p>Modelo de Dentista</p>
+<a href="Modelos/Dentcare/index.html" class="view-full-site" >Ver Site Completo</a>
+</div>
+<iframe class="model-iframe" src="Modelos/Dentcare/index.html" frameborder="0"></iframe>
+<video id="video-model" class="model-video" controls>
+<source src="Vídeos/dentista.mp4" type="video/mp4">
+</video>
+</div>
+</div>
+</div>
 </section>
 <section id=custo>
 <div id=empresa>
@@ -532,87 +550,149 @@ copiado: <span id=phone-number-copied></span>
 </div>
 </section>
 <section>
+    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
+    <div class="container py-5">
+    <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style=max-width:600px>
+    <h5 class="fw-bold text-uppercase">PLANOS DE PREÇOS</h5>
+    <h1 class=mb-0>Oferecemos Preços Competitivos para Nossos Clientes</h1>
+    </div>
+    <div class="row g-0">
+    <div class="col-lg-4 wow slideInUp" data-wow-delay=0.6s>
+    <div class=rounded style=background-color:#fff>
+    <div class="border-bottom py-4 px-5 mb-4">
+    <h4 class=mb-1>Plano Básico</h4>
+    <small class=text-uppercase>Para Sites de Uma Página</small>
+    </div>
+    <div class="p-5 pt-0">
+    <h1 class="display-5 mb-3">
+    <small class="align-top money-color" style=font-size:22px;line-height:45px>R$</small>1.000<small class=align-bottom style=font-size:16px;line-height:40px>/ Inicial</small>
+    </h1>
+    <div class="d-flex justify-content-between mb-3"><span>Design Básico</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Informações Essenciais</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Formulário de Contato</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Hospedagem & Manutenção</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>SEO Básico</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Suporte Técnico por Email</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Integração com Redes Sociais</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-2"><span>Backup Semanal</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 200 / Mês</span></div>
+    <a href="mailto:solutionswebdosul@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-4 wow slideInUp" data-wow-delay=0.3s>
+    <div class="bg-white rounded shadow position-relative" style=z-index:1>
+    <div class="border-bottom py-4 px-5 mb-4">
+    <h4 class=mb-1>Plano Institucional</h4>
+    <small class=text-uppercase>Para Sites Corporativos</small>
+    </div>
+    <div class="p-5 pt-0">
+    <h1 class="display-5 mb-3">
+    <small class="align-top money-color" style=font-size:22px;line-height:45px>R$</small>3.000<small class=align-bottom style=font-size:16px;line-height:40px>/ Inicial</small>
+    </h1>
+    <div class="d-flex justify-content-between mb-3"><span>Design Personalizado</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Páginas Ilimitadas</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Galeria de Fotos</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Hospedagem & Manutenção</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>SEO Avançado</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Blog Integrado</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Analytics & Relatórios</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Suporte Prioritário</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Atualizações Mensais</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-2"><span>Treinamento</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 300 / Mês</span></div>
+    <a href="mailto:solutionswebdosul@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-4 wow slideInUp" data-wow-delay=0.9s>
+    <div class=rounded style=background-color:#fff>
+    <div class="border-bottom py-4 px-5 mb-4">
+    <h4 class=mb-1>Plano E-commerce</h4>
+    <small class=text-uppercase>Para Lojas Online</small>
+    </div>
+    <div class="p-5 pt-0">
+    <h1 class="display-5 mb-3">
+    <small class="align-top money-color" style=font-size:22px;line-height:45px>R$</small>5.000<small class=align-bottom style=font-size:16px;line-height:40px>/ Inicial</small>
+    </h1>
+    <div class="d-flex justify-content-between mb-3"><span>Carrinho de Compras</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Sistema de Pagamento</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Gerenciamento de Produtos</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Hospedagem & Manutenção</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>SEO Completo</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Marketing por Email</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Integração com Redes Sociais</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Analytics & Relatórios Avançados</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Suporte Premium</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Atualizações Semanais</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-3"><span>Treinamento Avançado</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-2"><span>Integração com Chatbot</span><i class="fa fa-check pt-1"></i></div>
+    <div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 500 / Mês</span></div>
+    <a href="mailto:solutionswebdosul@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</section>
+<section>
 <div class="container-fluid py-5 wow fadeInUp" data-wow-delay=0.1s>
 <div class="container py-5">
 <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style=max-width:600px>
-<h5 class="fw-bold text-uppercase">PLANOS DE PREÇOS</h5>
-<h1 class=mb-0>Oferecemos Preços Competitivos para Nossos Clientes</h1>
+<h5 class="fw-bold text-uppercase">CALCULADORA DE ORÇAMENTO</h5>
+<h1 class=mb-0>Estime o Custo do Seu Projeto</h1>
 </div>
-<div class="row g-0">
-<div class="col-lg-4 wow slideInUp" data-wow-delay=0.6s>
-<div class="bg-light rounded">
-<div class="border-bottom py-4 px-5 mb-4">
-<h4 class=mb-1>Plano Básico</h4>
-<small class=text-uppercase>Para Sites de Uma Página</small>
+<div class="calculator-container rounded shadow p-5 bg-white">
+<form id=budget-form>
+<div class="form-group mb-4">
+<label for=project-type>Tipo de Projeto</label>
+<select id=project-type class=form-control onchange=updateFunctionalities()>
+<option value=site_institucional>Site Institucional</option>
+<option value=ecommerce>E-commerce</option>
+<option value=blog>Blog</option>
+<option value=app_mobile>Aplicativo Móvel</option>
+</select>
 </div>
-<div class="p-5 pt-0">
-<h1 class="display-5 mb-3">
-<small class="align-top money-color" style=font-size:22px;line-height:45px>R$</small>1.000<small class=align-bottom style=font-size:16px;line-height:40px>/ Inicial</small>
-</h1>
-<div class="d-flex justify-content-between mb-3"><span>Design Básico</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Informações Essenciais</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Formulário de Contato</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Hospedagem & Manutenção</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>SEO Básico</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Suporte Técnico por Email</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Integração com Redes Sociais</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-2"><span>Backup Semanal</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 200 / Mês</span></div>
-<a href="solutionswebdosul@gmail.com?subject=Outro Assunto&body=Corpo do Email" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
+<div class="form-group mb-4">
+<label for=pages-number>Número de Páginas</label>
+<input type=number id=pages-number class=form-control min=1 value=1>
+</div>
+<div class="form-group mb-4">
+<label>Funcionalidades Adicionais</label>
+<div id=additional-features>
 </div>
 </div>
+<div class="form-group mb-4">
+<label for=design-level>Nível de Design</label>
+<select id=design-level class=form-control>
+<option value=basic>Básico</option>
+<option value=intermediate>Intermediário</option>
+<option value=advanced>Avançado</option>
+</select>
 </div>
-<div class="col-lg-4 wow slideInUp" data-wow-delay=0.3s>
-<div class="bg-white rounded shadow position-relative" style=z-index:1>
-<div class="border-bottom py-4 px-5 mb-4">
-<h4 class=mb-1>Plano Institucional</h4>
-<small class=text-uppercase>Para Sites Corporativos</small>
+<div class="form-group mb-4">
+<label for=maintenance>Manutenção e Suporte</label>
+<select id=maintenance class=form-control>
+<option value=none>Nenhum</option>
+<option value=basic_support>Suporte Básico</option>
+<option value=full_support>Suporte Completo</option>
+</select>
 </div>
-<div class="p-5 pt-0">
-<h1 class="display-5 mb-3">
-<small class="align-top money-color" style=font-size:22px;line-height:45px>R$</small>3.000<small class=align-bottom style=font-size:16px;line-height:40px>/ Inicial</small>
-</h1>
-<div class="d-flex justify-content-between mb-3"><span>Design Personalizado</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Páginas Ilimitadas</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Galeria de Fotos</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Hospedagem & Manutenção</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>SEO Avançado</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Blog Integrado</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Analytics & Relatórios</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Suporte Prioritário</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Atualizações Mensais</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-2"><span>Treinamento</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 300 / Mês</span></div>
-<a href="solutionswebdosul@gmail.com?subject=Outro Assunto&body=Corpo do Email" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
+<div class="form-group mb-4">
+<label for=deadline>Prazo de Entrega</label>
+<select id=deadline class=form-control>
+<option value=normal>Normal</option>
+<option value=fast>Rápido</option>
+<option value=extended>Estendido</option>
+</select>
 </div>
-</div>
-</div>
-<div class="col-lg-4 wow slideInUp" data-wow-delay=0.9s>
-<div class="bg-light rounded">
-<div class="border-bottom py-4 px-5 mb-4">
-<h4 class=mb-1>Plano E-commerce</h4>
-<small class=text-uppercase>Para Lojas Online</small>
-</div>
-<div class="p-5 pt-0">
-<h1 class="display-5 mb-3">
-<small class="align-top money-color" style=font-size:22px;line-height:45px>R$</small>5.000<small class=align-bottom style=font-size:16px;line-height:40px>/ Inicial</small>
-</h1>
-<div class="d-flex justify-content-between mb-3"><span>Carrinho de Compras</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Sistema de Pagamento</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Gerenciamento de Produtos</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Hospedagem & Manutenção</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>SEO Completo</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Marketing por Email</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Integração com Redes Sociais</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Analytics & Relatórios Avançados</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Suporte Premium</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Atualizações Semanais</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-3"><span>Treinamento Avançado</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-2"><span>Integração com Chatbot</span><i class="fa fa-check pt-1"></i></div>
-<div class="d-flex justify-content-between mb-2"><span>Mensalidade:</span><span>R$ 500 / Mês</span></div>
-<a href="solutionswebdosul@gmail.com?subject=Outro Assunto&body=Corpo do Email" class="btn fundo-yellow py-3 px-5 mt-3">Solicitar Agora</a>
-</div>
-</div>
+<button type=button class="btn fundo-yellow py-3 px-5 mt-3" onclick=calculateBudget()>Calcular Orçamento</button>
+</form>
+<div id=budget-result class="result mt-5 text-center">
+<h3 style=color:#000>Seu Orçamento Estimado</h3>
+<p id=result-amount class=display-4><span class=green-currency>R$ </span>0,00</p>
+<p id=monthly-amount class=display-6><span class=green-currency>R$ </span>0,00 por mês</p>
 </div>
 </div>
 </div>
@@ -638,12 +718,12 @@ copiado: <span id=phone-number-copied></span>
 <i class="bi bi-x-square close-btn"></i>
 <a target=_blank href="https://www.facebook.com/profile.php?id=61559789754181" class="btn fundo-yellow py-3 px-5 mt-3">Messenger</a>
 <a target=_blank href=https://wa.link/uozhdu class="btn fundo-yellow py-3 px-5 mt-3">WhatsApp</a>
-<a href="solutionswebdosul@gmail.com?subject=Outro Assunto&body=Corpo do Email" class="btn fundo-yellow py-3 px-5 mt-3">solutionswebdosul@gmail.com</a>
+<a href="mailto:solutionswebdosul@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">solutionswebdosul@gmail.com</a>
 </div>
 </div>
 <div class=col-lg-5 id=coluna-blocs>
 <a target=_blank href="https://www.facebook.com/profile.php?id=61559789754181" class="btn fundo-yellow py-3 px-5 mt-3 wow zoomIn" data-wow-delay=0.9s>Messenger</a>
-<a href="solutionswebdosul@gmail.com?subject=Outro Assunto&body=Corpo do Email" class="btn fundo-yellow py-3 px-5 mt-3 wow zoomIn" data-wow-delay=0.9s>solutionswebdosul@gmail.com</a>
+<a href="mailto:solutionswebdosul@gmail.com?subject=Outro%20Assunto&body=Olá,%0A%0AIsto%20é%20um%20exemplo%20de%20corpo%20de%20email.%0A%0AObrigado!" class="btn fundo-yellow py-3 px-5 mt-3">solutionswebdosul@gmail.com</a>
 <a target=_blank href=https://wa.link/uozhdu class="btn fundo-yellow py-3 px-5 mt-3 wow zoomIn" data-wow-delay=0.9s>WhatsApp - Luis Filipi</a>
 </div>
 </div>
@@ -924,7 +1004,7 @@ Recomendamos entrar em contato conosco via Messenger do Facebook ou WhatsApp par
 <div class="blog-img position-relative overflow-hidden">
 <img class=img-fluid src=./imagens/codewall.avif alt="">
 </div>
-<div class=p-4>
+<div class=p-4 style="background-color: white;">
 <div class="d-flex mb-3">
 <small class=me-3><i class="far fa-user text-green me-2"></i>Equipe: Solutions Web do Sul</small>
 <small><i class="far fa-calendar-alt text-green me-2"></i>16, Abril 2024</small>
@@ -999,20 +1079,36 @@ Recomendamos entrar em contato conosco via Messenger do Facebook ou WhatsApp par
 </div>
 </footer>
 <a href=# class="btn btn-lg fundo-yellow btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
-<script src=https://code.jquery.com/jquery-3.4.1.min.js></script>
-<script src=https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js></script>
-<script src=lib/wow/wow.min.js></script>
-<script src=lib/easing/easing.min.js></script>
-<script src=lib/waypoints/waypoints.min.js></script>
-<script src=lib/counterup/counterup.min.js></script>
-<script src=lib/owlcarousel/owl.carousel.min.js></script>
-<script src=plugins/shuffle/shuffle.min.js></script>
-<script src=js/jquery.easing.min.js></script>
-<script src=https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js></script>
-<script src=https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js></script>
-<script src=https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js></script>
-<script src=https://kit.fontawesome.com/6c999c6add.js crossorigin=anonymous></script>
-<script src=js/main.js></script>
-<script src=js/index.js></script>
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+<script src="https://unpkg.com/leaflet.polyline.snakeanim.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<!-- Animation Libraries -->
+<script src="lib/wow/wow.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<!-- Easing Libraries -->
+<script src="lib/easing/easing.min.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<!-- Waypoints and CounterUp -->
+<script src="lib/waypoints/waypoints.min.js"></script>
+<script src="lib/counterup/counterup.min.js"></script>
+<!-- Carousel Libraries -->
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- Shuffle Plugin -->
+<script src="plugins/shuffle/shuffle.min.js"></script>
+<!-- FontAwesome Kit -->
+<script src="https://kit.fontawesome.com/6c999c6add.js" crossorigin="anonymous"></script>
+<!-- Custom JS -->
+<script src="js/main.js"></script>
+<script src="js/index.js"></script>
+<script>
+const functionalities={site_institucional:[{id:"seo-optimization",label:"Otimização SEO",value:300},{id:"contact-form",label:"Formulário de Contato",value:100}],ecommerce:[{id:"payment-gateway",label:"Integração com Gateway de Pagamento",value:500},{id:"product-management",label:"Gerenciamento de Produtos",value:400}],blog:[{id:"comment-system",label:"Sistema de Comentários",value:200},{id:"content-scheduling",label:"Agendamento de Conteúdo",value:150}],app_mobile:[{id:"push-notifications",label:"Notificações Push",value:300},{id:"in-app-purchases",label:"Compras In-App",value:400}]};function updateFunctionalities(){const e=document.getElementById("project-type").value,t=document.getElementById("additional-features");t.innerHTML="",functionalities[e].forEach(e=>{const a=document.createElement("div");a.classList.add("form-check"),a.innerHTML=`<input type="checkbox" class="form-check-input" id="${e.id}" value="${e.value}"><label class="form-check-label" for="${e.id}">${e.label}</label>`,t.appendChild(a)})}function animateValue(e,t,a,l,n="",i="",d=1){let c=a-t,r=t,o=a>t?1:-1,m=Math.abs(Math.floor(l/c*d)),u=document.getElementById(e),s=setInterval(function(){r+=o,u.innerHTML=`<span class="green-currency">${n}</span>${r.toLocaleString()}${i}`,r==a&&clearInterval(s)},m)}function calculateBudget(){let e=document.getElementById("project-type").value,t=parseInt(document.getElementById("pages-number").value),a=document.getElementById("design-level").value,l=document.getElementById("maintenance").value,n=document.getElementById("deadline").value,i=0,d=0,c=0;switch(e){case"site_institucional":i=1e3,c=200;break;case"ecommerce":i=3e3,c=300;break;case"blog":i=1500,c=200;break;case"app_mobile":i=5e3,c=500}d+=100*t,functionalities[e].forEach(e=>{document.getElementById(e.id).checked&&(d+=parseInt(document.getElementById(e.id).value))});switch(a){case"intermediate":d+=500;break;case"advanced":d+=1e3}switch(l){case"basic_support":d+=200,c+=100;break;case"full_support":d+=500,c+=200}switch(n){case"fast":d+=1e3;break;case"extended":d-=500}let r=i+d,o=-0;animateValue("result-amount",0,r,2e3,"R$ ","",o),animateValue("monthly-amount",0,c,2e3,"R$ "," por mês",o)}updateFunctionalities();
+</script>
 </body>
 </html>
